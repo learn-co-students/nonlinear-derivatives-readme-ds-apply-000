@@ -8,7 +8,7 @@ def trace(data, mode = 'markers', name="data"):
     y_values = list(map(lambda point: point['y'],data))
     return {'x': x_values, 'y': y_values, 'mode': mode, 'name': name}
 
-def line_function_trace(line_function, x_values, mode = 'line', name = 'line function'):
+def line_function_trace(line_function, x_values, mode = 'lines', name = 'line function'):
     values = line_function_data(line_function, x_values)
     values.update({'mode': mode, 'name': name})
     return values
@@ -26,7 +26,7 @@ def m_b_data(m, b, x_values):
 #     x_value = point['x']
 #     y = y_actual()
 #     name = 'error at ' + str(x_value)
-#     return {'x': [x, x], 'y': [y, y_hat], 'mode': 'line', 'marker': {'color': 'red'}, 'name': name}
+#     return {'x': [x, x], 'y': [y, y_hat], 'mode': 'lines', 'marker': {'color': 'red'}, 'name': name}
 #
 # def error_lines(regression_line, points):
 #     return list(map(lambda point: error_line(regression_line, point), points))
