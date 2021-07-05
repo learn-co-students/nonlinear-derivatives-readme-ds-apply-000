@@ -26,7 +26,7 @@ def m_b_data(m, b, x_values):
 #     x_value = point['x']
 #     y = y_actual()
 #     name = 'error at ' + str(x_value)
-#     return {'x': [x, x], 'y': [y, y_hat], 'mode': 'line', 'marker': {'color': 'red'}, 'name': name}
+#     return {'x': [x, x], 'y': [y, y_hat], 'mode': 'lines', 'marker': {'color': 'red'}, 'name': name}
 #
 # def error_lines(regression_line, points):
 #     return list(map(lambda point: error_line(regression_line, point), points))
